@@ -13,7 +13,7 @@ Currently, the app **fetches and displays a list of books**.
 
 ---
 
-## ⚙Tech Stack
+## Tech Stack
 - **Backend**: Django  
 - **Database**: MySQL  
 - **Frontend**: React (with Axios for API calls)  
