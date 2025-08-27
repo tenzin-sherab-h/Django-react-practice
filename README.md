@@ -64,8 +64,10 @@ python manage.py migrate
 python manage.py runserver
 ```
 ### 3. Frontend Setup (React)
-Open a new terminal and go to the frontend folder:
+#### Open a new terminal and go to the frontend folder:
+```
 cd frontend
+```
 Install dependencies:
 npm install
 Start the React development server:
