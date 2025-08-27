@@ -68,36 +68,16 @@ python manage.py runserver
 ```
 cd frontend
 ```
-Install dependencies:
+#### Install dependencies:
+```
 npm install
-Start the React development server:
+```
+#### Start the React development server:
+```
 npm start
-4. Access the Application
-Backend JSON endpoint: http://127.0.0.1:8000/books/ (example endpoint)
-Frontend: http://localhost:3000/
-📂 Project Structure
-practiceproject/
-│── backend (Django project files)
-│   ├── manage.py
-│   ├── practiceproject/
-│   └── ...
-│
-├── frontend (React app)
-│   ├── package.json
-│   ├── src/
-│   └── ...
-│
-├── images/          # Screenshots folder
-│   ├── react_frontend.png
-│   └── django_backend.png
-│
-├── requirements.txt
-└── README.md
-📸 Screenshots
+```
+
+## Screenshots
 React Frontend
 Django Backend
-✅ Notes
-Ensure MySQL service is running before starting the backend.
-Only commit code, not node_modules/ or virtual environments.
-The app currently only fetches and displays books; CRUD operations can be added later.
-The backend returns JSON data which the React frontend consumes.
+
