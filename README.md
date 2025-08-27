@@ -1,16 +1,17 @@
 # Django + React Practice Project
 
-A full-stack project combining **Django** for the backend and **React** for the frontend. This project demonstrates integration between a REST API and a modern frontend.
+A full-stack project combining **Django** for the backend and **React** for the frontend.  
+This project demonstrates integration between Django and a React frontend.
 
 ---
 
 ## Features
 
-- Django backend with REST API endpoints
-- React frontend with interactive UI
-- Integrated backend and frontend
+- Django backend
+- React frontend
+- Integrated frontend and backend
 - Example database (SQLite)
-- Ready for deployment
+- Ready for further development
 
 ---
 
@@ -30,6 +31,7 @@ djangopractice/
 ```bash
 git clone https://github.com/yourusername/Django-react-practice.git
 cd djangopractice
+'''
 Set up Python environment
 python3 -m venv prenv
 source prenv/bin/activate
@@ -42,8 +44,13 @@ Run Django server
 cd ../practiceproject
 python manage.py runserver
 Usage
-Backend API available at http://127.0.0.1:8000/
-Frontend UI available at http://localhost:3000/
+Backend server: http://127.0.0.1:8000/
+Frontend: http://localhost:3000/
+Screenshots
+Add screenshots of your project here:
+
+
+Replace path/to/screenshotX.png with your actual screenshot file paths in the repo.
 .gitignore
 The project ignores unnecessary files like:
 # Python
