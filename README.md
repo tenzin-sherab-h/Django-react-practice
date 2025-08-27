@@ -1,76 +1,101 @@
-# Django + React Practice Project
+# Practice Project (Django + React + MySQL)
 
-A full-stack project combining **Django** for the backend and **React** for the frontend.  
-This project demonstrates integration between Django and a React frontend.
+A simple full-stack web application with a **Django backend** connected to **MySQL** and a **React frontend**.  
+Currently, the app **fetches and displays a list of books**.
 
 ---
 
 ## Features
-
-- Django backend
-- React frontend
-- Integrated frontend and backend
-- Example database (SQLite)
-- Ready for further development
+- Django backend serving JSON data  
+- MySQL database for storing book data  
+- React frontend for displaying books  
+- CORS enabled for frontend-backend communication  
 
 ---
 
-## Project Structure
-
-djangopractice/
-├── frontend/ # React frontend
-├── practiceproject/ # Django backend
-├── prenv/ # Python virtual environment (ignored by Git)
-└── README.md # Project documentation
+## ⚙Tech Stack
+- **Backend**: Django  
+- **Database**: MySQL  
+- **Frontend**: React (with Axios for API calls)  
 
 ---
 
-## Installation
+## Setup Instructions
 
-1. **Clone the repository**
+### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/Django-react-practice.git
-cd djangopractice
-'''
-Set up Python environment
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+```
+### 2. Backend Setup (Django + MySQL)
+#### Navigate to the backend folder:
+```bash
+cd practiceproject
+```
+#### Create and activate a virtual environment:
+```bash
 python3 -m venv prenv
-source prenv/bin/activate
-pip install -r practiceproject/requirements.txt
-Set up React frontend
-cd frontend
-npm install
-npm start
-Run Django server
-cd ../practiceproject
+source prenv/bin/activate   # Mac/Linux
+prenv\Scripts\activate      # Windows
+```
+#### Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+#### Configure MySQL Database in settings.py:
+```bash
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'your_db_name',
+        'USER': 'your_mysql_user',
+        'PASSWORD': 'your_mysql_password',
+        'HOST': 'localhost',
+        'PORT': '3306',
+    }
+}
+```
+#### Run migrations:
+```bash
+python manage.py migrate
+```
+#### Start the backend server:
+```bash
 python manage.py runserver
-Usage
-Backend server: http://127.0.0.1:8000/
+```
+### 3. Frontend Setup (React)
+Open a new terminal and go to the frontend folder:
+cd frontend
+Install dependencies:
+npm install
+Start the React development server:
+npm start
+4. Access the Application
+Backend JSON endpoint: http://127.0.0.1:8000/books/ (example endpoint)
 Frontend: http://localhost:3000/
-Screenshots
-Add screenshots of your project here:
-
-
-Replace path/to/screenshotX.png with your actual screenshot file paths in the repo.
-.gitignore
-The project ignores unnecessary files like:
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.sqlite3
-db.sqlite3
-
-# Django
-/static/
-media/
-
-# Virtual environment
-prenv/
-
-# Node / React
-node_modules/
-build/
-dist/
-
-# macOS
-.DS_Store
+📂 Project Structure
+practiceproject/
+│── backend (Django project files)
+│   ├── manage.py
+│   ├── practiceproject/
+│   └── ...
+│
+├── frontend (React app)
+│   ├── package.json
+│   ├── src/
+│   └── ...
+│
+├── images/          # Screenshots folder
+│   ├── react_frontend.png
+│   └── django_backend.png
+│
+├── requirements.txt
+└── README.md
+📸 Screenshots
+React Frontend
+Django Backend
+✅ Notes
+Ensure MySQL service is running before starting the backend.
+Only commit code, not node_modules/ or virtual environments.
+The app currently only fetches and displays books; CRUD operations can be added later.
+The backend returns JSON data which the React frontend consumes.
