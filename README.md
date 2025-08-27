@@ -27,6 +27,7 @@ Currently, the app **fetches and displays a list of books**.
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
 ```
+
 ### 2. Backend Setup (Django + MySQL)
 #### Navigate to the backend folder:
 ```bash
@@ -63,6 +64,7 @@ python manage.py migrate
 ```bash
 python manage.py runserver
 ```
+
 ### 3. Frontend Setup (React)
 #### Open a new terminal and go to the frontend folder:
 ```
@@ -78,6 +80,10 @@ npm start
 ```
 
 ## Screenshots
-React Frontend
-Django Backend
+
+### React Frontend
+![React Frontend](images/react_app.png)
+
+### Django Backend
+![Django Backend](images/django_app.png)
 
