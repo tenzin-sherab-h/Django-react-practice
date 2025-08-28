@@ -1,7 +1,7 @@
 # Practice Project (Django + React + MySQL)
 
 A simple full-stack web application with a **Django backend** connected to **MySQL** and a **React frontend**.  
-Currently, the app **fetches and displays a list of books**.
+Currently, the app **fetches and displays a list of books with a stylized UI and interactive modal for details**.
 
 ---
 
@@ -9,14 +9,16 @@ Currently, the app **fetches and displays a list of books**.
 - Django backend serving JSON data  
 - MySQL database for storing book data  
 - React frontend for displaying books  
-- CORS enabled for frontend-backend communication  
+- CORS enabled for frontend-backend communication
+- TailwindCSS styling for modern UI
+- HeadlessUI modal for interactive book details
 
 ---
 
 ## Tech Stack
 - **Backend**: Django  
 - **Database**: MySQL  
-- **Frontend**: React (with Axios for API calls)  
+- **Frontend**: React (with Axios for API calls, TailwindCSS, HeadlessUI)  
 
 ---
 
